@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz_activity_app</string>
+    <string name="next_to_submit">Submit</string>
+    <string name="submit_to_next">Next</string>
+</resources>

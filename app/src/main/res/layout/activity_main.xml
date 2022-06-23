@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questions_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners_button"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Question"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option1_card"
+        android:onClick="option1_click"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners_button"
+        android:text="Answer 1">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option2_card"
+        android:onClick="option2_click"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_corners_button"
+        android:layout_marginBottom="20dp"
+        android:text="Answer 2">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option3_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners_button"
+        android:onClick="option3_click"
+        android:text="Answer 3">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/option4_card"
+        android:layout_width="match_parent"
+        android:onClick="option4_click"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners_button"
+        android:text="Answer 4">
+    </androidx.appcompat.widget.AppCompatButton>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prev_button"
+            android:onClick="prev_button_onclick"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Prev"
+            android:background="@drawable/round_corners"
+            android:layout_marginRight="30dp">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="next_button_onclick"
+            android:id="@+id/next_button1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Next"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/round_corners">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</LinearLayout>
